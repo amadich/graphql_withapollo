@@ -10,11 +10,21 @@ const typeDefs = gql`
       role: Role!
       friends: [User]
       wife: User
+      favoriteMovies: [Movies]
+   }
 
+   type Movies {
+      id: ID!
+      title: String!
+      releaseDate: String!
+      rating: Float!
    }
 
    type Query {
       users : [User!]!
+      user(id: ID!): User!
+      movies: [Movies!]!
+      movie(id: ID!): Movies!
    }
 
    enum Role {

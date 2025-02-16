@@ -20,7 +20,30 @@ const UserList = [
          email: "",
          password: "password123",
          role: "USER"
-      }
+      },
+
+      favoriteMovies: [
+         {
+            id: 1,
+            title: 'The Shawshank Redemption',
+            releaseDate: 2003,
+            rating: 9.3,
+            actors: [
+               { id: 1, name: 'Tim Robbins' },
+               { id: 2, name: 'Morgan Freeman' }
+            ]
+         },
+         {
+            id: 2,
+            title: 'The Godfather',
+            releaseDate: 1972,
+            rating: 9.2,
+            actors: [
+               { id: 3, name: 'Marlon Brando' },
+               { id: 4, name: 'Al Pacino' }
+            ]
+         }
+      ]
       
    
    },
